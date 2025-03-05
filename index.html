@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>crypto NDAX</title>
+            <link rel="icon" href="eiskaltdcpp.ico" type="image/eiskaltdcpp">
+            <link rel="stylesheet" href="style.css" />
+        </head>
+        <body class="color-change-4x">
+            
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <aside>Intuctions</aside>
+                <h2>Javascript</h2>
+                <table>
+                    <tr>
+                      <td>1. <b>priceBay</b> це ціна за якою ми купуємо крипту</td>
+                      <td>2. <b>countCoin</b> це кількість коїнів яка куплена</td>
+                      <td>3. <b>priceSellSelary</b> це сумма за яку я продав крипту не ціна іменно сума</td>
+                      <td>4. <b>countSellCoin</b> це сумма проданих коїнів</td>
+                      <td>5. <b>priceSellSelary</b> це сумма за яку я продав крипту не ціна іменно сума</td>
+                      <td>6. <b>money</b> це сумма потрачених грошей на крипту</td>
+                      <td>7. <b>procent</b> це процент від усього депозиту, рахуєця від сумми івестицій</td>
+                    </tr>
+                  </table>
+                    <h2>Main page</h2>
+                    <table>
+                    <tr>
+                      <td>8. <b>Volume</b> депозит статичний 4800 якщо ми купуємо крипту ми віднімаємо сумму</td>
+                      <td>9. <b>My deposit</b> сумма яку я інвестував тільки cad</td>
+                      <td>10. <b>Selary</b> це те скільки продав сумма, як тільки продаю</td>
+                      <td>11. <b>Sell Coin</b> це продані коїни віднімаюця від інвестованих</td>
+                      <td>12. <b>Procent Money</b> це процент в кад який я вищитав з сумми 4800, статичиний</td>
+                      <td>13. <b>Only one position</b> це сумма тільки по одній проданій крипті</td>
+                      <td>14. використовується сортування від більшого депозиту інвестованого в крипту</td>
+                      <td>version 1.6 test money 2117.9</td>
+                    </tr>
+                  </table>
+              </div>
+              <span onclick="openNav()"><h1>NDAX</h1><i>Intuctions</i></span>
+            <header>
+        <p class="importantNumber" >Volume: <span id="remainingAmount"></span></p>
+        <p class="importantNumber" >My deposit: <span id="myMoney"></span></p>
+        <p class="importantNumber" >Procent crypto: <span id="remainingProcent"></span></p>
+        <p class="importantNumber" >Selary: <span id="totalSelary"></span></p>
+            </header>
+            <div class="scale">
+              <div class="fill" id="remainingFill"></div>
+            </div>
+        <main class="container" id="itemsContainer"></main>
+
+</head>
+<footer>
+    <p>&copy; 2024 My Crypto Dashboard. All rights reserved.</p>
+</footer> 
+<script>
+    function openNav() {
+  document.getElementById("mySidenav").style.height = "100%";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.height = "0";
+}
+</script> 
+</body>
+<script type="module" src="./main.js"></script>
+</html>

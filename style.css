@@ -1,0 +1,244 @@
+body {
+  background-color: cadetblue;
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+aside {
+  margin: auto;
+  font-size: 2rem;
+  width: 100px;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #10b981;
+  height: 60px;
+  margin-bottom: 10px;
+  padding: 5px;
+  color: whitesmoke;
+  background: linear-gradient(145deg, #10b981, #0b9a6b);
+  box-shadow: 5px 5px 10px #45454519, -5px -5px 10px #ffffff11;
+}
+h1 {
+    width: 100px;
+    font-size: 2.5rem;
+    margin: 1px;
+    margin-left: 30px;
+  }
+  h1:hover {
+    transform: translateX(2px);
+    transition: 0.4s ease;
+    cursor: pointer;
+  }
+i{
+    position: relative;
+    top: -15px;
+    left: 80px;
+}
+.importantNumber {
+  font-size: 2.4rem;
+  text-shadow: 4px 2px 13px rgba(0, 0, 0, 0.6);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: 1050px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  width: 262px;
+  border-radius: 20px;
+  margin: 20px;
+  background: linear-gradient(145deg, #fff3ff, aliceblue);
+  font-size: 1.4rem;
+  color: #4b668c;
+  transition: 2s ease;
+  box-shadow: inset 0 0 0 0px black;
+  outline: 0px solid rgb(255, 0, 128);
+
+  transform: translate(0px);
+}
+.card:hover {
+  box-shadow: inset 0 0 0 1px black;
+  outline: 3px solid rgb(255, 0, 128);
+  transition: 3s ease;
+  transform: translate(3px);
+}
+
+.bold {
+  font-weight: bold;
+  color: black;
+}
+.boldSell {
+  font-weight: bold;
+  color: black;
+}
+.title {
+  position: absolute;
+}
+.title-text {
+  margin-left: 0.5rem;
+  color: #374151;
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
+}
+.item-container:hover {
+  outline: 3px solid rgb(255, 0, 128);
+}
+.circle {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: black;
+  transition: transform 1.5s ease;
+}
+.card .circle{
+    transform: translateY(-50%) translateX(130%);
+  background: linear-gradient(145deg, #f0f0f060, #cacaca41);
+  box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+}
+.card:hover .circle {
+    box-shadow: 5px 5px 20px #bebebe, -10px -10px 30px #ffffff;
+  }
+.color-change-4x {
+  animation: color-change-4x 16s linear infinite alternate both;
+}
+@keyframes color-change-4x {
+  0% {
+    background: #27384f;
+  }
+  33.3333% {
+    background: #2e3c4e;
+  }
+  66.666% {
+    background: #16202f;
+  }
+  100% {
+    background: #3c4e64;
+  }
+}
+footer {
+  background-color: #121821;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* бокова панель */
+.sidenav {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 0px;
+  transition: 0.5s;
+  /* overflow: hidden; */
+}
+
+.sidenav a,
+td {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #cfcfcf;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+h2{
+  margin-left: 20px;
+}
+/* шкала */
+.scale {
+  width: 100%;
+  height: 5px;
+  background-color: #48608132;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background-color: dodgerblue;
+  border-radius: 10px;
+  animation: fillAnimation 3s ease-in-out;
+}
+
+@keyframes fillAnimation {
+  0% {
+    width: 0%;
+  }
+  80% {
+    width: 100%;
+  }
+}
+@media (max-width: 1080px) {
+  .importantNumber {
+    font-size: 2rem;
+    padding: 10px;
+    margin: 0;
+  }
+}
+@media (max-width: 680px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 320px;
+  }
+  .importantNumber {
+    font-size: 2rem;
+    padding: 10px;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 680px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+    overflow: scroll;
+  }
+  td {
+    font-size: 0.2rem;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
