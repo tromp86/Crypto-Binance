@@ -131,16 +131,16 @@ i{
 }
 @keyframes color-change-4x {
   0% {
-    background: #19322c;
+    background: #192c32;
   }
   33.3333% {
-    background: #274538;
+    background: #274045;
   }
   66.666% {
-    background: #21443f;
+    background: #214144;
   }
   100% {
-    background: #2c4d4e;
+    background: #2c454e;
   }
 }
 footer {
