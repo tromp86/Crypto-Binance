@@ -12,7 +12,7 @@ let totalSelaryElementCAD = document.getElementById("totalSelaryCad");
 totalSelaryElementCAD.contentEditable = "true";
 const totalSellPrice = calculateTotalSellPrice();
 totalSelaryElement.textContent = totalSellPrice;
-totalSelaryElementCAD.textContent = 515;  
+totalSelaryElementCAD.textContent = 466;  
 
 function updateValues() {
   let enteredValue = parseFloat(totalSelaryElementCAD.textContent) || 0;
